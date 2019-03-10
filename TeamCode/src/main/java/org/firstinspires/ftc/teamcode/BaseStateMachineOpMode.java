@@ -249,7 +249,7 @@ public class BaseStateMachineOpMode extends BaseOpMode {
     }
 
     abstract class BaseLiftState extends BaseState {
-        abstract int getLiftTime();
+        abstract double getLiftTime();
         abstract double getPower();
         @Override
         public void start() {
@@ -300,18 +300,17 @@ public class BaseStateMachineOpMode extends BaseOpMode {
     }
 
     class StateLowerLift extends BaseLiftState {
-        int getLiftTime() { return 9; }
-        double getPower() {return -1.0; }
+        double getLiftTime() { return 3.5; }
+        double getPower() {return -0.5; }
     }
 
     class StateResetLift extends BaseLiftState {
-        int getLiftTime() {return 7;}
+        double getLiftTime() {return 7;}
         double getPower() { return 1.0;}
-
     }
 
     class StateAvoidStuck extends BaseLiftState {
-        int getLiftTime() {return 3;}
+        double getLiftTime() {return 3;}
         double getPower() { return 1.0;}
 
     }

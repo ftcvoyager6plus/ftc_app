@@ -14,10 +14,9 @@ public class RedCrater extends StateMachineExample {
 
     final PathSeg[] wallPath11 = {
             new PathSeg(-13, -13, 0.4),
-            new PathSeg(-11, 11, 0.4),
+            new PathSeg(-11, 101, 0.4),
             new PathSeg(-3,-3,0.4)
             //new PathSeg (-2, -2, 0.4)
-
     };
 
     final PathSeg[] wallPath1 = {
@@ -45,5 +44,5 @@ public class RedCrater extends StateMachineExample {
         } else {
             return(wallPath3);
         }
-    };
+    }
 }
